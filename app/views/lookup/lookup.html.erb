@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="data-form">
+    <% if @result == 'No Results' %>
+      <h1>No Results Returned! </h1>
+      <%= @result %>
+    <% elsif @abn =~ /^\d{11}$/ %>
+      <% @result.each do |key, value| %>
+        <% case key when :abn %> <%= value[:identifier_value] %>
+          <% when :entity_status %> <%= value[:entity_status_code] %> <%= value[:effective_from].strftime("%e %b %Y") %>
+          <% when :main_name %> <%= value[:organisation_name] %>
+          <% when :business_name %> <%= value[:organisation_name] %>
+          <% when :main_trading_name %> <%= value[:organisation_name] %>
+          <% when :other_trading_name %> <%= value[:organisation_name] %>
+          <% when :legal_name %> <%= value[:full_name] %>
+          <% when :main_business_physical_address %> <%= value[:postcode] %> <%= value[:state_code] %>
+        <% end %>
+      <% end %>
+    <% else %>
+      <% @result.each do |entry| %>
+        <% entry.each do |key, value| %>
+          <% case key when :abn %> <%= value[:identifier_value] %> <%= value[:identifier_status] %>
+          <% when :main_name %> <%= value[:organisation_name] %>
+          <% when :business_name %> <%= value[:organisation_name] %>
+          <% when :main_trading_name %> <%= value[:organisation_name] %>
+          <% when :other_trading_name %> <%= value[:organisation_name] %>
+          <% when :legal_name %> <%= value[:full_name] %>
+          <% when :main_business_physical_address %> <%= value[:postcode] %> <%= value[:state_code] %>
+          <% end %>
+        <% end %>
+        <br/>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,75 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-image: url("/background.jpg");
+}
+
+/* Banner styling */
+.banner {
+    background-color: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.8em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content area */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Form styling */
+.data-form {
+    background: #f9f9f9;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.data-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.data-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.data-form input:focus {
+    outline: none;
+    border-color: #0078d7;
+    box-shadow: 0 0 5px rgba(0, 120, 215, 0.5);
+}
+
+.data-form button {
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.data-form button:hover {
+    background-color: #005fa3;
+}
