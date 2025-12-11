@@ -437,7 +437,7 @@ DEPENDENCIES
   kamal
   propshaft
   puma (>= 5.0)
-  rails (~> 8.1.0)
+  rails (~> 8.1.1)
   rubocop-rails-omakase
   savon (~> 2.0)
   selenium-webdriver
