@@ -54,7 +54,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   # add Savon gem
-  gem 'savon', '~> 2.0'
+  gem "savon", "~> 2.0"
 end
 
 group :development do
