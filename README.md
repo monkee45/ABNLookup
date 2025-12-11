@@ -5,7 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 3.4.7
+* Rails version: 8.0.1
+* Savon client: >2.0
 
 * System dependencies
 

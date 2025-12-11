@@ -5,7 +5,7 @@
   <div class="data-form">
     <%= form_with url: "lookup", method: "get", local: "true" do |form| %>
       <%= label_tag(:abn, "ABN: ") %>
-      <%= text_field_tag :abn, nil, placeholder: 'Enter...', size: 25, autofocus: true, required: true %> <br/><br/>
+      <%= text_field_tag :abn, nil, placeholder: "Enter...", size: 25, autofocus: true, required: true %> <br/><br/>
       <%= form.submit "Search", class: "btn btn-primary", :name => nil %>
     <% end %>
   </div>
