@@ -6,8 +6,7 @@ class LookupController < ApplicationController
         @message = "In the else of the Index Action"
       end
     end
-    
-      
+
     def lookup
       @abn = params[:abn]
       @guid = "890b3a4c-7267-4c8f-8c43-825a349a5e87"
