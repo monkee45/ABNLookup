@@ -327,7 +327,7 @@ GEM
     ruby-vips (2.2.5)
       ffi (~> 1.12)
       logger
-    rubyzip (3.2.1)
+    rubyzip (3.2.2)
     savon (2.15.1)
       akami (~> 1.2)
       builder (>= 2.1.2)
@@ -338,7 +338,7 @@ GEM
       nori (~> 2.4)
       wasabi (>= 3.7, < 6)
     securerandom (0.4.1)
-    selenium-webdriver (4.38.0)
+    selenium-webdriver (4.39.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
